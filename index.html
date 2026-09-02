@@ -131,20 +131,26 @@
     .speed-control {
       display: flex;
       align-items: center;
-      gap: 10px;
-      background: white;
-      padding: 8px 15px;
-      border-radius: 20px;
-      border: 1px solid #e9ecef;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-    .speed-control label { font-size: 14px; color: #636e72; }
-    .speed-control select {
-      padding: 5px 10px;
-      border-radius: 10px;
-      border: 1px solid #dfe6e9;
-      font-size: 14px;
+    .speed-btn {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 2px solid #dfe6e9;
       background: white;
+      color: #636e72;
+      font-size: 13px;
+      font-weight: bold;
       cursor: pointer;
+      transition: all 0.3s;
+    }
+    .speed-btn:hover { border-color: #6c5ce7; color: #6c5ce7; }
+    .speed-btn.active {
+      background: #6c5ce7;
+      border-color: #6c5ce7;
+      color: white;
     }
 
     .loading { text-align: center; padding: 50px; color: #636e72; }
@@ -272,21 +278,26 @@
       html += '<div class="player">';
       html += '<button class="play-btn" id="playBtn" onclick="playAudio()">▶</button>';
       html += '<div class="speed-control">';
-      html += '<label>朗讀速度：</label>';
-      html += '<select id="speedSelect" onchange="changeSpeed()">';
-      ['0.5|0.5x 慢速','0.75|0.75x 稍慢','1|1.0x 正常','1.25|1.25x 稍快','1.5|1.5x 快速','2|2.0x 倍速'].forEach(function(opt) {
-        var parts = opt.split('|');
-        html += '<option value="' + parts[0] + '">' + parts[1] + '</option>';
+      var speeds = [
+        {val:'0.5', label:'0.5x'},
+        {val:'0.75', label:'0.75x'},
+        {val:'1', label:'1x'},
+        {val:'1.25', label:'1.25x'},
+        {val:'1.5', label:'1.5x'},
+        {val:'2', label:'2x'}
+      ];
+      speeds.forEach(function(s) {
+        html += '<button class="speed-btn" data-speed="'+s.val+'" onclick="changeSpeed(\''+s.val+'\')">'+s.label+'</button>';
       });
-      html += '</select>';
       html += '</div>';
-      html += '<div class="speed-indicator" id="speedIndicator"></div>';
       html += '</div>';
 
       document.getElementById('content').innerHTML = html;
       audioPlayer.src = g.mp3;
       audioPlayer.load();
-      audioPlayer.playbackRate = parseFloat(document.getElementById('speedSelect').value);
+      audioPlayer.playbackRate = 1; // 預設 1倍速
+      // 設定按鈕 active 狀態
+      document.querySelector('.speed-btn[data-speed="1"]').classList.add('active');
     }
 
     function switchGrade(grade) {
@@ -316,11 +327,11 @@
       }
     }
 
-    function changeSpeed() {
-      var speed = document.getElementById('speedSelect').value;
+    function changeSpeed(speed) {
       audioPlayer.playbackRate = parseFloat(speed);
-      var labels = {'0.5':'慢速','0.75':'稍慢','1':'正常','1.25':'稍快','1.5':'快速','2':'倍速'};
-      document.getElementById('speedIndicator').textContent = '目前速度: ' + labels[speed];
+      document.querySelectorAll('.speed-btn').forEach(function(btn) {
+        btn.classList.toggle('active', btn.getAttribute('data-speed') === speed);
+      });
     }
 
     document.addEventListener('DOMContentLoaded', init);
