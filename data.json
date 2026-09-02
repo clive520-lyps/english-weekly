@@ -1,0 +1,275 @@
+[
+  {
+    "week": 1,
+    "date": "2026/8/30",
+    "special_topic": "Back to school. 開學",
+    "grades": {
+      "g1": { "en": "Good morning.", "zh": "早安。", "mp3": "11501/W01_G1.mp3" },
+      "g2": { "en": "Nice to meet you!", "zh": "很高興認識你！", "mp3": "11501/W01_G2.mp3" },
+      "g3": { "en": "Hi, I'm __________. Nice to meet you.", "zh": "嗨，我是__________。很高興認識你。", "mp3": "11501/W01_G3.mp3" },
+      "g4": { "en": "Hi, I'm __________. Nice to meet you.", "zh": "嗨，我是__________。很高興認識你。", "mp3": "11501/W01_G4.mp3" },
+      "g5": { "en": "I made some new friends today!", "zh": "我今天交了新朋友！", "mp3": "11501/W01_G5.mp3" },
+      "g6": { "en": "Welcome back to school! I made some new friends today!", "zh": "歡迎回學校！我今天交了新朋友！", "mp3": "11501/W01_G6.mp3" }
+    }
+  },
+  {
+    "week": 2,
+    "date": "2026/9/6",
+    "special_topic": "",
+    "grades": {
+      "g1": { "en": "My name is __________.", "zh": "我的名字是__________。", "mp3": "11501/W02_G1.mp3" },
+      "g2": { "en": "What is your name? My name is __________.", "zh": "你叫什麼名字？我的名字是__________。", "mp3": "11501/W02_G2.mp3" },
+      "g3": { "en": "I feel happy. (calm, sad, good)", "zh": "我覺得很開心。（冷靜、難過、很好）", "mp3": "11501/W02_G3.mp3" },
+      "g4": { "en": "I feel happy. (calm, sad, good)", "zh": "我覺得很開心。（冷靜、難過、很好）", "mp3": "11501/W02_G4.mp3" },
+      "g5": { "en": "How do you feel? I feel __________.", "zh": "你感覺如何？我感覺__________。", "mp3": "11501/W02_G5.mp3" },
+      "g6": { "en": "How do you feel? I feel __________.", "zh": "你感覺如何？我感覺__________。", "mp3": "11501/W02_G6.mp3" }
+    }
+  },
+  {
+    "week": 3,
+    "date": "2026/9/13",
+    "special_topic": "Mid-Autumn Festival 中秋節",
+    "grades": {
+      "g1": { "en": "The moon is beautiful. (Happy Mid-Autumn Festival!)", "zh": "月亮好漂亮。（中秋節快樂！）", "mp3": "11501/W03_G1.mp3" },
+      "g2": { "en": "The moon is bright. (Happy Mid-Autumn Festival!)", "zh": "月亮好明亮。（中秋節快樂！）", "mp3": "11501/W03_G2.mp3" },
+      "g3": { "en": "Happy Mid-Autumn Festival!", "zh": "中秋節快樂！", "mp3": "11501/W03_G3.mp3" },
+      "g4": { "en": "I eat __________ on Mid-Autumn Festival.", "zh": "我在中秋節吃__________。", "mp3": "11501/W03_G4.mp3" },
+      "g5": { "en": "Do you like pomelo? Yes, I do. / No, I don't.", "zh": "你喜歡柚子嗎？喜歡。/ 不，我不喜歡。", "mp3": "11501/W03_G5.mp3" },
+      "g6": { "en": "Do you like Mid-Autumn Festival? Yes, I do. / No, I don't.", "zh": "你喜歡中秋節嗎？喜歡。/ 不，我不喜歡。", "mp3": "11501/W03_G6.mp3" }
+    }
+  },
+  {
+    "week": 4,
+    "date": "2026/9/20",
+    "special_topic": "Teacher's Day 教師節",
+    "grades": {
+      "g1": { "en": "Happy Teacher's Day!", "zh": "教師節快樂！", "mp3": "11501/W04_G1.mp3" },
+      "g2": { "en": "Happy Teacher's Day!", "zh": "教師節快樂！", "mp3": "11501/W04_G2.mp3" },
+      "g3": { "en": "Happy Teacher's Day!", "zh": "教師節快樂！", "mp3": "11501/W04_G3.mp3" },
+      "g4": { "en": "Happy Teacher's Day!", "zh": "教師節快樂！", "mp3": "11501/W04_G4.mp3" },
+      "g5": { "en": "Thank you, teacher. Happy Teacher's Day!", "zh": "謝謝老師。教師節快樂！", "mp3": "11501/W04_G5.mp3" },
+      "g6": { "en": "Thank you, teacher. Happy Teacher's Day!", "zh": "謝謝老師。教師節快樂！", "mp3": "11501/W04_G6.mp3" }
+    }
+  },
+  {
+    "week": 5,
+    "date": "2026/9/27",
+    "special_topic": "",
+    "grades": {
+      "g1": { "en": "I can count.", "zh": "我會數數。", "mp3": "11501/W05_G1.mp3" },
+      "g2": { "en": "Here you are.", "zh": "給你。", "mp3": "11501/W05_G2.mp3" },
+      "g3": { "en": "How old are you? I'm __________.", "zh": "你幾歲？我__________歲。", "mp3": "11501/W05_G3.mp3" },
+      "g4": { "en": "Who is he/she? He/She is my teacher.", "zh": "他/她是誰？他/她是我的老師。", "mp3": "11501/W05_G4.mp3" },
+      "g5": { "en": "Do you like cola? Yes, I do. / No, I don't.", "zh": "你喜歡可樂嗎？喜歡。/ 不，我不喜歡。", "mp3": "11501/W05_G5.mp3" },
+      "g6": { "en": "Where are you from? I'm from __________.", "zh": "你從哪裡來？我從__________來。", "mp3": "11501/W05_G6.mp3" }
+    }
+  },
+  {
+    "week": 6,
+    "date": "2026/10/4",
+    "special_topic": "",
+    "grades": {
+      "g1": { "en": "Let's sing.", "zh": "一起來唱歌。", "mp3": "11501/W06_G1.mp3" },
+      "g2": { "en": "I can sing.", "zh": "我會唱歌。", "mp3": "11501/W06_G2.mp3" },
+      "g3": { "en": "I can share.", "zh": "我會分享。", "mp3": "11501/W06_G3.mp3" },
+      "g4": { "en": "Can you sing? Yes, I can. / No, I can't.", "zh": "你會唱歌嗎？會。/ 不，我不會。", "mp3": "11501/W06_G4.mp3" },
+      "g5": { "en": "Does he/she like tea? Yes, he/she does. / No, he/she doesn't.", "zh": "他/她喜歡茶嗎？喜歡。/ 不，他/她不喜歡。", "mp3": "11501/W06_G5.mp3" },
+      "g6": { "en": "Is he/she from the USA? Yes, he/she is. / No, he/she isn't.", "zh": "他/她是從美國來的嗎？是的。/ 不是。", "mp3": "11501/W06_G6.mp3" }
+    }
+  },
+  {
+    "week": 7,
+    "date": "2026/10/11",
+    "special_topic": "",
+    "grades": {
+      "g1": { "en": "Try again.", "zh": "再試一次。", "mp3": "11501/W07_G1.mp3" },
+      "g2": { "en": "Don't give up.", "zh": "不要放棄。", "mp3": "11501/W07_G2.mp3" },
+      "g3": { "en": "I can do it.", "zh": "我做得到。", "mp3": "11501/W07_G3.mp3" },
+      "g4": { "en": "We can do it.", "zh": "我們做得到。", "mp3": "11501/W07_G4.mp3" },
+      "g5": { "en": "Try again. You can do it.", "zh": "再試一次。你做得到。", "mp3": "11501/W07_G5.mp3" },
+      "g6": { "en": "Don't give up. Believe in yourself.", "zh": "不要放棄。相信自己。", "mp3": "11501/W07_G6.mp3" }
+    }
+  },
+  {
+    "week": 8,
+    "date": "2026/10/18",
+    "special_topic": "Halloween 萬聖節",
+    "grades": {
+      "g1": { "en": "Let's play! Happy Halloween!", "zh": "一起來玩！萬聖節快樂！", "mp3": "11501/W08_G1.mp3" },
+      "g2": { "en": "Let's play! Happy Halloween!", "zh": "萬聖節快樂！", "mp3": "11501/W08_G2.mp3" },
+      "g3": { "en": "What is it? It's a bat.", "zh": "這是什麼？這是一隻蝙蝠。", "mp3": "11501/W08_G3.mp3" },
+      "g4": { "en": "It's Halloween. I can't wait!", "zh": "萬聖節到了！我等不及了！", "mp3": "11501/W08_G4.mp3" },
+      "g5": { "en": "Trick or Treat! Happy Halloween!", "zh": "不給糖就搗蛋！萬聖節快樂！", "mp3": "11501/W08_G5.mp3" },
+      "g6": { "en": "Do you like Halloween? Yes, I do. / No, I don't.", "zh": "你喜歡萬聖節嗎？喜歡。/ 不，我不喜歡。", "mp3": "11501/W08_G6.mp3" }
+    }
+  },
+  {
+    "week": 9,
+    "date": "2026/10/25",
+    "special_topic": "",
+    "grades": {
+      "g1": { "en": "It is yellow. (blue, red, green)", "zh": "它是黃色的。（藍、紅、綠）", "mp3": "11501/W09_G1.mp3" },
+      "g2": { "en": "What color is it? It is yellow. (blue / red / green)", "zh": "這是什麼顏色？它是黃色的。", "mp3": "11501/W09_G2.mp3" },
+      "g3": { "en": "What do you see? I see a witch.", "zh": "你看到什麼？我看到一個女巫。", "mp3": "11501/W09_G3.mp3" },
+      "g4": { "en": "What is it? It's a vampire.", "zh": "這是什麼？這是一個吸血鬼。", "mp3": "11501/W09_G4.mp3" },
+      "g5": { "en": "What is your favorite fruit? My favorite fruit is __________.", "zh": "你最喜歡的水果是什麼？我最喜歡的水果是__________。", "mp3": "11501/W09_G5.mp3" },
+      "g6": { "en": "What would you like to eat? I'd like some pizza, please.", "zh": "你想吃什麼？我想要一些披薩。", "mp3": "11501/W09_G6.mp3" }
+    }
+  },
+  {
+    "week": 10,
+    "date": "2026/11/1",
+    "special_topic": "",
+    "grades": {
+      "g1": { "en": "Goodbye. / See you soon.", "zh": "再見。/ 回頭見。", "mp3": "11501/W010_G1.mp3" },
+      "g2": { "en": "Stop! Watch out!", "zh": "停下！小心！", "mp3": "11501/W010_G2.mp3" },
+      "g3": { "en": "Are you hungry? Yes, I am. / No, I'm not.", "zh": "你餓了嗎？是的。/ 不，我不餓。", "mp3": "11501/W010_G3.mp3" },
+      "g4": { "en": "Do your best!", "zh": "盡力而為！", "mp3": "11501/W010_G4.mp3" },
+      "g5": { "en": "How many apples do you need? I need __________ apples.", "zh": "你需要多少顆蘋果？我需要__________顆。", "mp3": "11501/W010_G5.mp3" },
+      "g6": { "en": "What's wrong? I have a headache.", "zh": "怎麼了？我頭痛。", "mp3": "11501/W010_G6.mp3" }
+    }
+  },
+  {
+    "week": 11,
+    "date": "2026/11/8",
+    "special_topic": "",
+    "grades": {
+      "g1": { "en": "Let's read!", "zh": "一起來閱讀！", "mp3": "11501/W011_G1.mp3" },
+      "g2": { "en": "Let's learn!", "zh": "一起來學習！", "mp3": "11501/W011_G2.mp3" },
+      "g3": { "en": "Let's review.", "zh": "一起來複習。", "mp3": "11501/W011_G3.mp3" },
+      "g4": { "en": "Let's review and learn.", "zh": "一起來複習和學習。", "mp3": "11501/W011_G4.mp3" },
+      "g5": { "en": "Sweet drinks are not good for you.", "zh": "甜飲料對你不好。", "mp3": "11501/W011_G5.mp3" },
+      "g6": { "en": "Does he/she have a fever? Yes, he/she does. / No, he/she doesn't.", "zh": "他/她發燒了嗎？是的。/ 不，他/她沒有。", "mp3": "11501/W011_G6.mp3" }
+    }
+  },
+  {
+    "week": 12,
+    "date": "2026/11/15",
+    "special_topic": "",
+    "grades": {
+      "g1": { "en": "That's okay.", "zh": "沒關係。", "mp3": "11501/W012_G1.mp3" },
+      "g2": { "en": "How are you?", "zh": "你好嗎？", "mp3": "11501/W012_G2.mp3" },
+      "g3": { "en": "Can you help me? Sure.", "zh": "你能幫我嗎？當然。", "mp3": "11501/W012_G3.mp3" },
+      "g4": { "en": "It's OK to be sad.", "zh": "難過也沒關係。", "mp3": "11501/W012_G4.mp3" },
+      "g5": { "en": "Eating a rainbow of fruit is good for our bodies.", "zh": "吃各種顏色的水果對我們的身體很好。", "mp3": "11501/W012_G5.mp3" },
+      "g6": { "en": "An apple a day keeps the doctor away.", "zh": "一天一蘋果，醫生遠離我。", "mp3": "11501/W012_G6.mp3" }
+    }
+  },
+  {
+    "week": 13,
+    "date": "2026/11/22",
+    "special_topic": "weather 天氣",
+    "grades": {
+      "g1": { "en": "It's cool.", "zh": "天氣涼涼的。", "mp3": "11501/W013_G1.mp3" },
+      "g2": { "en": "It's cloudy.", "zh": "天氣多雲。", "mp3": "11501/W013_G2.mp3" },
+      "g3": { "en": "It's cool and cloudy.", "zh": "天氣涼爽又多雲。", "mp3": "11501/W013_G3.mp3" },
+      "g4": { "en": "How's the weather? It's __________.", "zh": "天氣如何？天氣是__________。", "mp3": "11501/W013_G4.mp3" },
+      "g5": { "en": "Do you like the weather today? Yes, I do. / No, I don't.", "zh": "你喜歡今天的天氣嗎？喜歡。/ 不，我不喜歡。", "mp3": "11501/W013_G5.mp3" },
+      "g6": { "en": "What do you like to do after school? I like to __________ after school.", "zh": "你放學後喜歡做什麼？我放學後喜歡__________。", "mp3": "11501/W013_G6.mp3" }
+    }
+  },
+  {
+    "week": 14,
+    "date": "2026/11/29",
+    "special_topic": "",
+    "grades": {
+      "g1": { "en": "A: Thank you. B: You are welcome.", "zh": "A：謝謝。B：不客氣。", "mp3": "11501/W014_G1.mp3" },
+      "g2": { "en": "Who's next? It's my turn.", "zh": "下一位是誰？換我了。", "mp3": "11501/W014_G2.mp3" },
+      "g3": { "en": "What is this/that? It's __________.", "zh": "這/那是什麼？這是__________。", "mp3": "11501/W014_G3.mp3" },
+      "g4": { "en": "What's the weather like? It's __________.", "zh": "天氣怎麼樣？天氣是__________。", "mp3": "11501/W014_G4.mp3" },
+      "g5": { "en": "What day is today? It's __________.", "zh": "今天星期幾？今天是__________。", "mp3": "11501/W014_G5.mp3" },
+      "g6": { "en": "What would you like to eat? I'd like some pizza, please.", "zh": "你想吃什麼？我想要一些披薩。", "mp3": "11501/W014_G6.mp3" }
+    }
+  },
+  {
+    "week": 15,
+    "date": "2026/12/6",
+    "special_topic": "",
+    "grades": {
+      "g1": { "en": "Be safe.", "zh": "注意安全。", "mp3": "11501/W015_G1.mp3" },
+      "g2": { "en": "Be nice.", "zh": "要友善。", "mp3": "11501/W015_G2.mp3" },
+      "g3": { "en": "Be nice and be polite!", "zh": "要友善也要有禮貌！", "mp3": "11501/W015_G3.mp3" },
+      "g4": { "en": "Be kind and be polite!", "zh": "要善良也要有禮貌！", "mp3": "11501/W015_G4.mp3" },
+      "g5": { "en": "Be kind and be brave!", "zh": "要善良也要勇敢！", "mp3": "11501/W015_G5.mp3" },
+      "g6": { "en": "What are the three B's in our school? Be kind, be polite, and be respectful.", "zh": "我們學校的三個B是什麼？要善良、要有禮貌、要尊重他人。", "mp3": "11501/W015_G6.mp3" }
+    }
+  },
+  {
+    "week": 16,
+    "date": "2026/12/13",
+    "special_topic": "Christmas 聖誕節",
+    "grades": {
+      "g1": { "en": "Let's play!", "zh": "一起來玩！", "mp3": "11501/W016_G1.mp3" },
+      "g2": { "en": "What do you see? I see a star.", "zh": "你看到什麼？我看到一顆星星。", "mp3": "11501/W016_G2.mp3" },
+      "g3": { "en": "What do you see? I see a Christmas tree.", "zh": "你看到什麼？我看到一棵聖誕樹。", "mp3": "11501/W016_G3.mp3" },
+      "g4": { "en": "What do you want for Christmas? I want a toy.", "zh": "你聖誕節想要什麼？我想要一個玩具。", "mp3": "11501/W016_G4.mp3" },
+      "g5": { "en": "What do you want for Christmas? I want a toy.", "zh": "你聖誕節想要什麼？我想要一個玩具。", "mp3": "11501/W016_G5.mp3" },
+      "g6": { "en": "Merry Christmas! Hope you all have a great day.", "zh": "聖誕快樂！希望大家都有美好的一天。", "mp3": "11501/W016_G6.mp3" }
+    }
+  },
+  {
+    "week": 17,
+    "date": "2026/12/20",
+    "special_topic": "winter 冬天",
+    "grades": {
+      "g1": { "en": "It's cold and cloudy.", "zh": "天氣又冷又多雲。", "mp3": "11501/W017_G1.mp3" },
+      "g2": { "en": "It's winter. It's cool now.", "zh": "現在是冬天。現在天氣涼涼的。", "mp3": "11501/W017_G2.mp3" },
+      "g3": { "en": "It's winter.", "zh": "現在是冬天。", "mp3": "11501/W017_G3.mp3" },
+      "g4": { "en": "What season is it? It's winter.", "zh": "這是什麼季節？這是冬天。", "mp3": "11501/W017_G4.mp3" },
+      "g5": { "en": "What's your favorite part of Christmas?", "zh": "你最喜歡聖誕節的哪一個部分？", "mp3": "11501/W017_G5.mp3" },
+      "g6": { "en": "We go camping on the weekend. (hiking, shopping, swimming)(Merry Christmas!)", "zh": "我們週末去露營。（爬山、逛街、游泳）（聖誕快樂！）", "mp3": "11501/W017_G6.mp3" }
+    }
+  },
+  {
+    "week": 18,
+    "date": "2026/12/27",
+    "special_topic": "",
+    "grades": {
+      "g1": { "en": "I like to go to a hot spring.", "zh": "我喜歡去泡溫泉。", "mp3": "11501/W018_G1.mp3" },
+      "g2": { "en": "What do you like to do in winter? I like to go to a hot spring.", "zh": "你冬天喜歡做什麼？我喜歡去泡溫泉。", "mp3": "11501/W018_G2.mp3" },
+      "g3": { "en": "What do you like to do in winter? I like to __________ in winter.", "zh": "你冬天喜歡做什麼？我冬天喜歡__________。", "mp3": "11501/W018_G3.mp3" },
+      "g4": { "en": "What do you like to do in winter? I like to __________ in winter.", "zh": "你冬天喜歡做什麼？我冬天喜歡__________。", "mp3": "11501/W018_G4.mp3" },
+      "g5": { "en": "What do you like to do in winter? I like to __________ in winter.", "zh": "你冬天喜歡做什麼？我冬天喜歡__________。", "mp3": "11501/W018_G5.mp3" },
+      "g6": { "en": "What do you like to do in winter? I like to __________ in winter.", "zh": "你冬天喜歡做什麼？我冬天喜歡__________。", "mp3": "11501/W018_G6.mp3" }
+    }
+  },
+  {
+    "week": 19,
+    "date": "2027/1/3",
+    "special_topic": "",
+    "grades": {
+      "g1": { "en": "Are you OK? Yes. / No.", "zh": "你還好嗎？好的。/ 不好。", "mp3": "11501/W019_G1.mp3" },
+      "g2": { "en": "Line up, please.", "zh": "請排隊。", "mp3": "11501/W019_G2.mp3" },
+      "g3": { "en": "What color is it? It's __________.", "zh": "這是什麼顏色？這是__________。", "mp3": "11501/W019_G3.mp3" },
+      "g4": { "en": "Where is the pencil? It's on the table.", "zh": "鉛筆在哪裡？在桌子上。", "mp3": "11501/W019_G4.mp3" },
+      "g5": { "en": "What's your favorite subject? My favorite subject is __________.", "zh": "你最喜歡什麼科目？我最喜歡的科目是__________。", "mp3": "11501/W019_G5.mp3" },
+      "g6": { "en": "What time do you get up? I get up at __________.", "zh": "你幾點起床？我在__________起床。", "mp3": "11501/W019_G6.mp3" }
+    }
+  },
+  {
+    "week": 20,
+    "date": "2027/1/10",
+    "special_topic": "",
+    "grades": {
+      "g1": { "en": "I can share.", "zh": "我會分享。", "mp3": "11501/W020_G1.mp3" },
+      "g2": { "en": "Let's eat hot pot.", "zh": "一起來吃火鍋。", "mp3": "11501/W020_G2.mp3" },
+      "g3": { "en": "Good luck!", "zh": "祝你好運！", "mp3": "11501/W020_G3.mp3" },
+      "g4": { "en": "Good luck!", "zh": "祝你好運！", "mp3": "11501/W020_G4.mp3" },
+      "g5": { "en": "What's his/her favorite subject? His/Her favorite subject is __________.", "zh": "他/她最喜歡什麼科目？他/她最喜歡的科目是__________。", "mp3": "11501/W020_G5.mp3" },
+      "g6": { "en": "I build good habits by exercising every week.", "zh": "我透過每週運動來養成好習慣。", "mp3": "11501/W020_G6.mp3" }
+    }
+  },
+  {
+    "week": 21,
+    "date": "2027/1/17",
+    "special_topic": "Lunar New Year 農曆新年",
+    "grades": {
+      "g1": { "en": "Happy Lunar New Year!", "zh": "農曆新年快樂！", "mp3": "11501/W021_G1.mp3" },
+      "g2": { "en": "Happy Lunar New Year!", "zh": "農曆新年快樂！", "mp3": "11501/W021_G2.mp3" },
+      "g3": { "en": "Happy Lunar New Year!", "zh": "農曆新年快樂！", "mp3": "11501/W021_G3.mp3" },
+      "g4": { "en": "Happy Lunar New Year!", "zh": "農曆新年快樂！", "mp3": "11501/W021_G4.mp3" },
+      "g5": { "en": "We can share love! Happy Lunar New Year!", "zh": "我們可以分享愛！農曆新年快樂！", "mp3": "11501/W021_G5.mp3" },
+      "g6": { "en": "Firecrackers and lion dances, Spring couplets greet the day. We enjoy food and smile so bright. Happy Lunar New Year!", "zh": "鞭炮和舞龍舞獅，春聯迎接新的一天。我們享受美食，笑容燦爛。農曆新年快樂！", "mp3": "11501/W021_G6.mp3" }
+    }
+  }
+]

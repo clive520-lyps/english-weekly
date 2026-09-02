@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英語每週一句</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      overflow: hidden;
+    }
+
+    /* 標題 */
+    .header {
+      background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+      padding: 20px;
+      text-align: center;
+    }
+    .header h1 { color: #2d3436; font-size: 24px; margin-bottom: 5px; }
+    .header .week-info { color: #636e72; font-size: 14px; }
+
+    /* 週次導航 */
+    .week-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 20px;
+      background: #f8f9fa;
+      border-bottom: 1px solid #e9ecef;
+    }
+    .nav-btn {
+      background: #6c5ce7;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    .nav-btn:hover { background: #5a4bd1; transform: scale(1.05); }
+    .nav-btn:disabled { background: #b2bec3; cursor: not-allowed; transform: none; }
+    .week-display {
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #2d3436;
+      min-width: 120px;
+      text-align: center;
+    }
+
+    /* 年級頁籤 */
+    .grade-tabs {
+      display: flex;
+      background: #f8f9fa;
+      border-bottom: 2px solid #e9ecef;
+    }
+    .grade-tab {
+      flex: 1;
+      padding: 12px 5px;
+      text-align: center;
+      cursor: pointer;
+      font-weight: bold;
+      color: #636e72;
+      transition: all 0.3s;
+      border-bottom: 3px solid transparent;
+    }
+    .grade-tab:hover { background: #e9ecef; color: #2d3436; }
+    .grade-tab.active { color: #6c5ce7; border-bottom-color: #6c5ce7; background: white; }
+
+    /* 內容 */
+    .content { padding: 30px; }
+    .special-topic {
+      background: #ffeaa7;
+      padding: 10px 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #2d3436;
+      text-align: center;
+    }
+    .sentence-card {
+      background: #f8f9fa;
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .english { font-size: 24px; font-weight: bold; color: #2d3436; margin-bottom: 10px; line-height: 1.6; }
+    .chinese { font-size: 18px; color: #636e72; margin-bottom: 20px; }
+
+    /* 播放器 */
+    .player {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    .play-btn {
+      background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+      color: white;
+      border: none;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 20px rgba(108, 92, 231, 0.4);
+      transition: all 0.3s;
+    }
+    .play-btn:hover { transform: scale(1.1); box-shadow: 0 8px 30px rgba(108, 92, 231, 0.6); }
+    .play-btn:active { transform: scale(0.95); }
+
+    .speed-control {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      border: 1px solid #e9ecef;
+    }
+    .speed-control label { font-size: 14px; color: #636e72; }
+    .speed-control select {
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: 1px solid #dfe6e9;
+      font-size: 14px;
+      background: white;
+      cursor: pointer;
+    }
+
+    .loading { text-align: center; padding: 50px; color: #636e72; }
+    .loading .spinner {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #6c5ce7;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 15px;
+    }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+    /* 語速指示 */
+    .speed-indicator {
+      font-size: 12px;
+      color: #6c5ce7;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 10px; }
+      .container { border-radius: 15px; }
+      .header h1 { font-size: 20px; }
+      .grade-tab { padding: 10px 2px; font-size: 12px; }
+      .english { font-size: 20px; }
+      .chinese { font-size: 16px; }
+      .content { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>英語每週一句</h1>
+      <div class="week-info" id="weekInfo">載入中...</div>
+    </div>
+
+    <div class="week-nav">
+      <button class="nav-btn" id="prevBtn" onclick="changeWeek(-1)">◀ 上一週</button>
+      <div class="week-display" id="weekDisplay">--</div>
+      <button class="nav-btn" id="nextBtn" onclick="changeWeek(1)">下一週 ▶</button>
+    </div>
+
+    <div class="grade-tabs" id="gradeTabs">
+      <div class="grade-tab active" data-grade="g1" onclick="switchGrade('g1')">G1</div>
+      <div class="grade-tab" data-grade="g2" onclick="switchGrade('g2')">G2</div>
+      <div class="grade-tab" data-grade="g3" onclick="switchGrade('g3')">G3</div>
+      <div class="grade-tab" data-grade="g4" onclick="switchGrade('g4')">G4</div>
+      <div class="grade-tab" data-grade="g5" onclick="switchGrade('g5')">G5</div>
+      <div class="grade-tab" data-grade="g6" onclick="switchGrade('g6')">G6</div>
+    </div>
+
+    <div class="content" id="content">
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>載入資料中...</p>
+      </div>
+    </div>
+  </div>
+
+  <audio id="audioPlayer"></audio>
+
+  <script>
+    var allWeeks = [];
+    var currentWeekIndex = 0;
+    var currentGrade = 'g1';
+    var audioPlayer = null;
+
+    function init() {
+      audioPlayer = document.getElementById('audioPlayer');
+      loadJSON();
+    }
+
+    function loadJSON() {
+      fetch('data.json')
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+          allWeeks = data;
+          currentWeekIndex = getCurrentWeekIndex();
+          renderWeek();
+        })
+        .catch(function(err) {
+          document.getElementById('content').innerHTML =
+            '<div class="loading"><p style="color: red;">載入失敗: ' + err.message + '</p></div>';
+        });
+    }
+
+    function getCurrentWeekIndex() {
+      var today = new Date();
+      for (var i = 0; i < allWeeks.length; i++) {
+        var weekDate = new Date(allWeeks[i].date);
+        var weekEnd = new Date(weekDate);
+        weekEnd.setDate(weekEnd.getDate() + 6);
+        if (today >= weekDate && today <= weekEnd) return i;
+      }
+      for (var i = 0; i < allWeeks.length; i++) {
+        if (today < new Date(allWeeks[i].date)) return Math.max(0, i - 1);
+      }
+      return allWeeks.length - 1;
+    }
+
+    function renderWeek() {
+      if (!allWeeks.length) return;
+      var week = allWeeks[currentWeekIndex];
+
+      document.getElementById('weekInfo').textContent = '第 ' + week.week + ' 週 | ' + week.date;
+      document.getElementById('weekDisplay').textContent = '第 ' + week.week + ' 週';
+      document.getElementById('prevBtn').disabled = (currentWeekIndex === 0);
+      document.getElementById('nextBtn').disabled = (currentWeekIndex === allWeeks.length - 1);
+
+      var html = '';
+      if (week.special_topic) {
+        html += '<div class="special-topic">' + week.special_topic + '</div>';
+      }
+
+      var g = week.grades[currentGrade];
+      html += '<div class="sentence-card">';
+      html += '<div class="english">' + g.en + '</div>';
+      html += '<div class="chinese">' + g.zh + '</div>';
+      html += '</div>';
+
+      html += '<div class="player">';
+      html += '<button class="play-btn" id="playBtn" onclick="playAudio()">▶</button>';
+      html += '<div class="speed-control">';
+      html += '<label>朗讀速度：</label>';
+      html += '<select id="speedSelect" onchange="changeSpeed()">';
+      ['0.5|0.5x 慢速','0.75|0.75x 稍慢','1|1.0x 正常','1.25|1.25x 稍快','1.5|1.5x 快速','2|2.0x 倍速'].forEach(function(opt) {
+        var parts = opt.split('|');
+        html += '<option value="' + parts[0] + '">' + parts[1] + '</option>';
+      });
+      html += '</select>';
+      html += '</div>';
+      html += '<div class="speed-indicator" id="speedIndicator"></div>';
+      html += '</div>';
+
+      document.getElementById('content').innerHTML = html;
+      audioPlayer.src = g.mp3;
+      audioPlayer.load();
+      audioPlayer.playbackRate = parseFloat(document.getElementById('speedSelect').value);
+    }
+
+    function switchGrade(grade) {
+      currentGrade = grade;
+      document.querySelectorAll('.grade-tab').forEach(function(tab) {
+        tab.classList.toggle('active', tab.getAttribute('data-grade') === grade);
+      });
+      renderWeek();
+    }
+
+    function changeWeek(delta) {
+      var newIndex = currentWeekIndex + delta;
+      if (newIndex >= 0 && newIndex < allWeeks.length) {
+        audioPlayer.pause();
+        audioPlayer.currentTime = 0;
+        currentWeekIndex = newIndex;
+        renderWeek();
+      }
+    }
+
+    function playAudio() {
+      if (audioPlayer.paused) {
+        audioPlayer.play();
+      } else {
+        audioPlayer.pause();
+        audioPlayer.currentTime = 0;
+      }
+    }
+
+    function changeSpeed() {
+      var speed = document.getElementById('speedSelect').value;
+      audioPlayer.playbackRate = parseFloat(speed);
+      var labels = {'0.5':'慢速','0.75':'稍慢','1':'正常','1.25':'稍快','1.5':'快速','2':'倍速'};
+      document.getElementById('speedIndicator').textContent = '目前速度: ' + labels[speed];
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
